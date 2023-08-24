@@ -1,4 +1,5 @@
 #!/bin/bash
 cd /home/ubuntu/nodemls
-pm2 stop app.js
-pm2 start app.js -f
+pm2 stop all
+pm2 delete all
+pm2 start app.js 
